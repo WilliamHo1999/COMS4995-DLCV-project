@@ -464,7 +464,7 @@ if __name__ == "__main__":
 
     train_loader, val_loader = build_dataloaders(red_df, visible_char_map, df2 = val_df, batch_size = params['train_batch'])
     
-    resnet, loaded_state_dict = build_resnet(num_classes, 'models/resnet_re_train.pt')
+    resnet, loaded_state_dict = build_resnet(num_classes, None)
     
     print(loaded_state_dict)
     
